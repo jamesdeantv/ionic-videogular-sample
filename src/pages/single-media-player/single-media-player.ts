@@ -36,7 +36,7 @@ export class SingleMediaPlayerPage {
 
     getCurrentTime() {
          this.api.getDefaultMedia().subscriptions.timeUpdate.subscribe(() => {
-           this.currentTime = this.api.getDefaultMedia().time.current || 0;
+           this.displayCurrentTime = this.api.getDefaultMedia().time.current || 0;
         });
     }
 
